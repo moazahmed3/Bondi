@@ -1,0 +1,214 @@
+:root{
+    --dark-color:#19283f;
+    --green-color:#33d1cc;
+    --or-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-toggler{
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.search{
+    border-left: var(--green-color) 1px solid;
+}
+.navbar .search svg{
+    color: var(--green-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn{
+    background-color: var(--or-color);
+    color: var(--yellow-color);
+    padding: .5rem 1rem;
+    transition: all ease .55s;
+}
+.btn:hover{
+    background: transparent;
+    border: 1px var(--or-color) solid;
+    color: var(--or-color);
+}
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ /* end landing */
+ /* start features */
+
+ .main-content::before{
+    content: "";
+    background-color: var(--green-color);
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+ }
+ .icons{
+    height: 200px;
+    
+ }
+.features .icons svg{
+    left: 50%;
+    transform: translateX(-50%);
+ }
+.icons .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icons .icon{
+    color: var(--green-color);
+}
+.features .card-feature h3{
+    color: var(--yellow-color);
+}
+  /* end features */
+
+  
+/* start work  */
+.work{
+    background-color: var(--section-color);
+}
+.work ul li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition:all ease .55s ;
+}
+.work ul .active{
+    background-color: var(--or-color);
+    color: #ffc400;
+}
+.work ul li:hover:not(.active){
+    color: var(--or-color);
+}
+.work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color:rgb(51 209  204/76%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all ease .55s;
+    transform: translateX(calc(104% - 6px));
+}
+.work .box:hover::before{
+    transform: translateX(0);
+}
+/* end work  */
+/* start stuff */
+.Stuff .description{
+    max-width: 500px;
+}
+/* end stuff */
+
+/* start team */
+.team{
+    background-color: var(--section-color);
+}
+.team h2{
+    color: var(--yellow-color);
+}
+.box{
+    transition: all ease .55s;
+    cursor: pointer;
+}
+.box:hover{
+    transform: translateY(-8px) scale(1.1);
+}
+.box h5{
+    background-color: var(--green-color);
+    
+}
+/* end team */
+
+/* start section text */
+.sec-text{
+    background-color: var(--dark-color);
+}
+/* end section text */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe a{
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+    transition: all ease .55s;
+}
+.subscribe .address input{
+    border: none;
+    border-bottom: 1px white solid;
+}
+.subscribe .address input:focus{
+    outline: none;
+}
+.subscribe .address input::placeholder{
+    color: white;
+}
+.subscribe .buttons input{
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+}
+.subscribe .buttons input:hover{
+    color: var(--dark-color);
+    background-color: transparent;
+    border-color: var(--dark-color);
+}
+/* end subscribe */
+/* start footer */
+footer{
+    background: var(--dark-color);
+}
+.contact .facebook{
+    color:#1877f2 ;
+}
+.contact .twitter{
+    color:#1da1f2 ;
+}
+.contact .linkedin{
+    color: #0077b5;
+}
+.contact .youtube{
+    color: #ff0000;
+}
+.name-outher{
+    font-weight: bold;
+    color: var(--green-color)
+}
+.name-project{
+    font-weight: bold;
+    color: var(--yellow-color);
+}
